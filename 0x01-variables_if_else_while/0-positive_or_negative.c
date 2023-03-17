@@ -1,8 +1,11 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* Main - A program that prints output using the printf fucnction */
- /* Return: 0 */
+/**
+ * main - A program that prints output using the printf function
+ *
+ * Return: 0
+ */
 int main(void)
 {
 	int n;
