@@ -8,11 +8,10 @@ int print_last_digit(int num)
 {
 if (num < -1)
 {
-_putchar("-num");
+return (-num);
 }
 else
 {
-_putchar("num");
+return (num);
 }
-return (0);
 }
