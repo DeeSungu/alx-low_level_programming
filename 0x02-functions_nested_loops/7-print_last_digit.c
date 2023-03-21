@@ -6,12 +6,7 @@
  */
 int print_last_digit(int num)
 {
-if (num < -1)
-{
-return (-num);
-}
-else
-{
-return (num);
-}
+int last_digit = num % 10;
+_putchar ("%d\n", num, last_digit);
+return (last_digit);
 }
