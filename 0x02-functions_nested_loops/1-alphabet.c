@@ -1,7 +1,6 @@
 #include "main.h"
 /**
- * main - a program that prints output in lowercase
- * Return: 0
+ * print_alphabet - a program that prints output in lowercase
  */
 void print_alphabet(void);
 {
@@ -10,5 +9,5 @@ for (n = "a"; n <= "z"; n++)
 {
 _putchar(n);
 }
-_putchar('/n')
+_putchar('/n');
 }
