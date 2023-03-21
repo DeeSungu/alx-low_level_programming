@@ -3,13 +3,16 @@
  * _abs - a function that compute the absolute value of an integer
  * Return: 0
  * @int: describes that the output will be an integer
- */
+*/
 int _abs(int)
 {
-int n;
-n = _abs(98);
+int r;
+if (r < 0)
 {
-_putchar("%d\n", n);
+	return (-r);
 }
-return (0);
+else
+{
+return (r);
+}
 }
