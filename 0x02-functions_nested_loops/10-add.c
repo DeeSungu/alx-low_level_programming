@@ -1,13 +1,11 @@
 #include "main.h"
 /**
- * add - adds two integers and print the result
- * Result: sum
- * @num1: the output to be extracted
- * @num2: the output to be extracted
+ * add - adds two numbers
+ * @a: the output to be extracted
+ * @b: the output to be extracted
+ * Return: sum
  */
-int add(int num1, int num2)
+int add(int a, int b)
 {
-int sum;
-sum = num1 + num2;
-return (sum);
+return (a + b);
 }
