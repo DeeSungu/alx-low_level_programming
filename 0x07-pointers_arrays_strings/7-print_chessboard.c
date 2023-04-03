@@ -1,4 +1,3 @@
-root@bbdfd58aae24:/alx-low_level_programming/0x07-pointers_arrays_strings# more 7-print_chessboard.c 
 #include "main.h"
 /**
  * print_chessboard - Entry point
