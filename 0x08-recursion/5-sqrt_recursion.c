@@ -14,14 +14,18 @@ int _sqrt_recursion(int n)
 	{
 	return (1);
 	}
-	int root = _sqrt_recursion(n / 2) * 2;
+	int root = _sqrt_recursion(n / 2);
 
-	if (root > _sqrt_recursion(n / 2))
+	if (root * root == n)
 	{
-	return (root - 1);
+	return (root);
+	}
+	else if (root * root < n)
+	{
+	return (root + 1);
 	}
 	else
 	{
-	return (root);
+	return (root - 1);
 	}
 }
