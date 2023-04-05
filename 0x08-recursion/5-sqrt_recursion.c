@@ -12,22 +12,21 @@ int _sqrt_recursion(int n)
 	{
 	return (-1);
 	}
-	if (n == 0 || n == 1)
+	else if (n == 0 || n == 1)
 	{
-	return (1);
-	}
-	int root = _sqrt_recursion(n / 2);
-
-	if (root * root == n)
-	{
-	return (root);
-	}
-	else if (root * root < n)
-	{
-	return (root + 1);
+	return (n);
 	}
 	else
 	{
-	return (root - 1);
+	root = _sqrt_recursion(n / 2);
+
+	if (n % 2 == 0)
+	{
+	return (root * 2);
+	}
+	else
+	{
+	return (root * 2 + 1);
+	}
 	}
 }
