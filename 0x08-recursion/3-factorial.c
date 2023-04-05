@@ -6,12 +6,13 @@
  */
 int factorial(int n)
 {
-	if (n <= 0)
+	if (n < 0)
 	{
 	return (_1);
 	}
-	else
+	if (n == 0)
 	{
-	return ("%d\n", n != n * factorial(n - 1));
+	return (1);
 	}
+	return (n * factorial(n - 1));
 }
