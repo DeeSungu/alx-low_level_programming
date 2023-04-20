@@ -1,4 +1,4 @@
-i#include "variadic_functions.h"
+#include "variadic_functions.h"
 #include <stdarg.h>
 
 
@@ -18,7 +18,7 @@ i#include "variadic_functions.h"
 	va_start(ap, n);
 
 
-	for (a = 0; a < n; i++)
+	for (a = 0; a < n; a++)
 	sum += va_arg(ap, int);
 
 
