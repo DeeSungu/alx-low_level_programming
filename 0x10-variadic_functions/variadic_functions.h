@@ -1,5 +1,8 @@
-#ifndef "VARIADIC_FUNCTIONS_H_"
-#define "VARIADIC_FUNCTIONS_H_"
+#ifndef "VARIADIC_FUNCTIONS_H"
+#define "VARIADIC_FUNCTIONS_H"
+
+#include <stdio.h>
+#include <stdarg.h>
 
 
 int _putchar(char c);
