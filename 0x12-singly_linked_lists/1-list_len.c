@@ -3,18 +3,17 @@
 
 /**
  * list_len - the function
- * @h: pointer to the head
- *
- * Return: c
+ * @h: pointer
+ * Return: n_of
  */
 size_t list_len(const list_t *h)
 {
-	size_t c = 0;
+	size_t num_of = 0;
 
 	for (; h != NULL; h = h->next)
 	{
-		c++;
+		num_of
 	}
 
-	return (c);
+	return (num_of);
 }

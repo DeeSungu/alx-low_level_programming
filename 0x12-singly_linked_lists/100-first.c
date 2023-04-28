@@ -1,10 +1,10 @@
 #include <stdio.h>
-void first(void) __attribute__ ((constructor));
+void myfunction(void) __attribute__ ((constructor));
 
 /**
- * first - function
+ * myfunction - function
  */
-void first(void)
+void myfunction(void)
 {
 	printf("You're beat! and yet, you must allow,\n");
 	printf("I bore my house upon my back!\n");
