@@ -23,9 +23,9 @@ unsigned int len;
 
 	myNode->str = strdup(str);
 	myNode->len = len;
-	new->next = NULL;
+	myNode->next = NULL;
 
-	if (!c)
+	if (c == NULL)
 	{
 	*head = myNode;
 	return (myNode);
