@@ -25,7 +25,7 @@ unsigned int len;
 	myNode->len = len;
 	new->next = NULL;
 
-	if (c == NULL)
+	if (!c)
 	{
 	*head = myNode;
 	return (myNode);
