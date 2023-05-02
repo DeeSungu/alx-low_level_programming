@@ -10,7 +10,7 @@ listint_t *cNode;
 	while (head)
 	{
 		cNode = head->next;
-		head = cNode;
 		free(head);
+		head = cNode;
 	}
 }
