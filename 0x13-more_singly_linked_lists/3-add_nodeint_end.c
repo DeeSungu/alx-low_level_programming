@@ -19,6 +19,7 @@ nNode->next = NULL;
 if (*head == NULL)
 {
 *head = nNode;
+return nNode;
 }
 else
 lNode = *head;
