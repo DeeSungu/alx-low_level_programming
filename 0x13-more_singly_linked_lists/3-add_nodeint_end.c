@@ -27,5 +27,7 @@ while (lNode->next != NULL)
 {
 lNode = lNode->next;
 }
+lNode->next = nNode;
+
 return (nNode);
 }
