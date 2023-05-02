@@ -12,7 +12,7 @@ const listint_t *cNode = head, *a;
 	while (cNode != NULL)
 	{
 	i++;
-	printf("[p%] %d\n", (void *)cNode, cNode->n);
+	printf("[%p] %d\n", (void *)cNode, cNode->n);
 	a = cNode;
 	cNode = cNode->next;
 
@@ -20,6 +20,7 @@ const listint_t *cNode = head, *a;
 	{
 	printf("-> [%p] %d\n", (void *)cNode, cNode->n);
 	exit(98);
+	}
 	}
 return (i);
 }
