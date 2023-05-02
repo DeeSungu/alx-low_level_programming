@@ -19,4 +19,4 @@ while (*head != NULL)
 *head = p;
 
 return (*head);
-}	
+}
