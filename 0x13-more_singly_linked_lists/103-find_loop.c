@@ -15,7 +15,7 @@ listint_t *nfs = head;
 while (nsl && nfs && nfs->next)
 {
 	nfs = nfs->next->next;
-	slow = slow->next;
+	nsl = nsl->next;
 	if (nfs == nsl)
 	{
 	nsl = head;
