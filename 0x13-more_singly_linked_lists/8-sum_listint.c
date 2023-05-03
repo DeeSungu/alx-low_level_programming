@@ -7,7 +7,7 @@
 int sum_listint(listint_t *head)
 {
 listint_t *cNode = head;
-int s;
+int s = 0;
 
 while (cNode != NULL)
 {
