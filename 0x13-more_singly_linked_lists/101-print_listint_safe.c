@@ -6,21 +6,33 @@
  */
 size_t print_listint_safe(const listint_t *head)
 {
-size_t i = 0;
-const listint_t *cNode = head, *a;
+size_t c = 0;
+const listint_t *cu = head;
+const listint_t *start = NULL;
 
-	while (cNode != NULL)
+	while (cu != NULL)
 	{
-	i++;
-	printf("[%p] %d\n", (void *)cNode, cNode->n);
-	a = cNode;
-	cNode = cNode->next;
+	c++;
+	if (cu >= head + c)
+	{
+	start = cu;
+	break;
+	}
+	cu = cu->next;
+	}
 
-	if (a <= cNode)
+	cu = head;
+
+	while (cu != NULL)
 	{
-	printf("-> [%p] %d\n", (void *)cNode, cNode->n);
+	printf("[%p] %d\n", (void *)cu, cu->n);
+	if (current == cycle_start)
+	{
+	printf("-> [%p] %d\n", (void *)start, start->n);
 	exit(98);
 	}
+	cu = cu->next;
 	}
-return (i);
+
+return (c);
 }
