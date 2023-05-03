@@ -1,71 +1,81 @@
 #include "lists.h"
+size_t myfunction(const listint_t *head);
+size_t print_listint_safe(const listint_t *head);
 /**
- * myfunction - function
- * @head: head
- * Return: return
- */
+* myfunction - function
+* @head: head
+* Return: return
+*/
+
 size_t myfunction(const listint_t *head)
 {
-const listint_t *a, *h;
+const listint_t *b, *h;
 size_t no = 1;
 
 if (head == NULL || head->next == NULL)
 return (0);
 
-a = head->next;
+b = head->next;
 h = (head->next)->next;
 
 while (h)
 {
-if (a == h)
+if (b == h)
 {
-a = head;
-while (a != h)
+b = head;
+
+while (b != h)
 {
 no++;
-a = a->next;
+b = b->next;
 h = h->next;
 }
-a = a->next;
-while (a != h)
+b = b->next;
+
+while (b != h)
 {
 no++;
-a = a->next;
+b = b->next;
 }
 return (no);
 }
-a = a->next;
+b = b->next;
+
 h = (h->next)->next;
+
 }
 return (0);
 }
 
 /**
- * print_listint_safe - function
- * @head: head
- * Return: return
- */
+* print_listint_safe - function
+* @head: head
+* Return: return
+*/
 size_t print_listint_safe(const listint_t *head)
-{
-size_t no = 0;
-const listint_t *cu = head, *s = head;
 
-if (head == NULL)
-exit(98);
-
-while (cu)
 {
-no++;
-printf("[%p] %d\n", (void *)cu, cu->n);
-cu = cu->next;
 
-if (cu >= s)
+size_t no, a = 0;
+no = myfunction(head);
+
+if (no == 0)
 {
-printf("-> [%p] %d\n", (void *)cu, cu->n);
-no++;
-break;
+for (; head != NULL; no++)
+{
+printf("[%p] %d\n", (void *)head, head->n);
+head = head->next;
 }
 }
 
+else
+{
+for (a = 0; a < no; a++)
+{
+printf("[%p] %d\n", (void *)head, head->n);
+head = head->next;
+}
+printf("-> [%p] %d\n", (void *)head, head->n);
+}
 return (no);
 }
