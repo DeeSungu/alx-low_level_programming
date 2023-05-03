@@ -26,7 +26,7 @@ nNode->next = *head;
 return (nNode);
 }
 
-for (a = 0; b && i < idx; a++)
+for (a = 0; b && a < idx; a++)
 {
 	if (a == idx - 1)
 	{
