@@ -1,2 +1,2 @@
 # Project
-* C - Bit manipulation
+* C - Bit manipulations
